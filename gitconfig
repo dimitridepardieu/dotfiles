@@ -1,0 +1,12 @@
+[alias]
+  lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
+
+[push]
+  default = simple
+
+[init]
+	defaultBranch = main
+
+[user]
+	name = Dimitri Depardieu
+	email = dimitridepardieu@gmail.com
