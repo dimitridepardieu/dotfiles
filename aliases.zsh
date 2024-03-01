@@ -1,3 +1,5 @@
+# ~/.oh-my-zsh/custom/aliases.zsh
+
 # Shortcuts
 alias dev="cd ~/Developer"
 alias dl="cd ~/Downloads"
