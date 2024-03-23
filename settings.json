@@ -2,7 +2,6 @@
 
 {
     "python.defaultInterpreterPath": "~/.pyenv/shims/python",
-    "workbench.colorTheme": "GitHub Light Default",
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
     "editor.rulers": [
@@ -13,11 +12,19 @@
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "workbench.activityBar.location": "top",
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "trailing",
     "workbench.editor.showTabs": "none",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 1,
     "files.autoSave": "onWindowChange",
+    "window.menuBarVisibility": "hidden",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro",
 }
