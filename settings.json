@@ -13,7 +13,6 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "workbench.activityBar.location": "top",
     "editor.renderWhitespace": "trailing",
-    "workbench.editor.showTabs": "none",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 1,
@@ -26,5 +25,19 @@
         "scminput": false
     },
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "editor.tabSize": 2,
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "[php]": {
+        "editor.tabSize": 4
+    },
+    "[c]": {
+        "editor.tabSize": 4
+    },
+    "[rust]": {
+        "editor.tabSize": 4
+    },
+    "files.insertFinalNewline": true,
 }
