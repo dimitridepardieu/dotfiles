@@ -4,9 +4,7 @@
     "python.defaultInterpreterPath": "~/.pyenv/shims/python",
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
-    "editor.rulers": [
-        80
-    ],
+    "editor.rulers": [80],
     "update.showReleaseNotes": false,
     "editor.formatOnPaste": true,
     "editor.cursorBlinking": "phase",
@@ -19,13 +17,11 @@
     "files.autoSave": "onWindowChange",
     "window.menuBarVisibility": "hidden",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false
     },
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "GitHub Dark Dimmed",
     "editor.tabSize": 2,
     "[python]": {
         "editor.tabSize": 4
@@ -39,5 +35,39 @@
     "[rust]": {
         "editor.tabSize": 4
     },
+    "[json]": {
+        "editor.tabSize": 4
+    },
     "files.insertFinalNewline": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        "[GitHub Light Default]": {
+        "sideBar.background": "#eeeeee",
+        "editor.background": "#eeeeee",
+        "statusBar.background": "#eeeeee",
+        "panel.background": "#eeeeee",
+        // "selection.background": "#eeeeee",
+        "dropdown.background": "#eeeeee",
+        "dropdown.listBackground": "#eeeeee",
+        "dropdown.foreground": "#eeeeee",
+        "input.background": "#eeeeee",
+        "editor.rangeHighlightBackground": "red"
+        }
+    },
+    "workbench.colorCustomizations": {
+        "[Default Light Modern]": {
+        "sideBar.background": "#eeeeee",
+        "editor.background": "#eeeeee",
+        "statusBar.background": "#eeeeee",
+        "panel.background": "#eeeeee",
+        // "selection.background": "#eeeeee",
+        "dropdown.background": "#eeeeee",
+        "dropdown.listBackground": "#eeeeee",
+        "dropdown.foreground": "#eeeeee",
+        "input.background": "#eeeeee",
+        "editor.rangeHighlightBackground": "red"
+        }
+    },
+    "workbench.editor.showTabs": "single"
 }
