@@ -1,3 +1,5 @@
+" ~/.vimrc
+
 " Set a 80 chars limit
 set colorcolumn=80
 
