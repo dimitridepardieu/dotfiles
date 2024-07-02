@@ -80,6 +80,10 @@ plugins=(
 # Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
+# Load rbenv if installed to manage Ruby versions
+export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
+type -a rbenv > /dev/null && eval "$(rbenv init -)"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -127,3 +131,4 @@ export LANG=en_US.UTF-8
 
 # Set the default text editor for Bundler (Ruby dependency management tool)
 # export BUNDLER_EDITOR=code
+
