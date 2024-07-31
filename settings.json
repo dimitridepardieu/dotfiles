@@ -7,17 +7,16 @@
     "editor.rulers": [80],
     "update.showReleaseNotes": false,
     "editor.formatOnPaste": true,
-    "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": "on",
+    // "editor.cursorBlinking": "phase",
+    // "editor.cursorSmoothCaretAnimation": "on",
     "workbench.activityBar.location": "top",
     "editor.renderWhitespace": "trailing",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 1,
-    "files.autoSave": "onWindowChange",
-    "window.menuBarVisibility": "hidden",
+    "window.menuBarVisibility": "compact",
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": false,
         "markdown": false,
         "scminput": false
@@ -40,7 +39,6 @@
     },
     "files.insertFinalNewline": true,
     "github.copilot.editor.enableAutoCompletions": true,
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
         "[GitHub Light Default]": {
         "sideBar.background": "#eeeeee",
@@ -69,5 +67,22 @@
         "editor.rangeHighlightBackground": "red"
         }
     },
-    "workbench.editor.showTabs": "single"
+    "workbench.editor.showTabs": "single",
+    "[ruby]": {
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.insertSpaces": true,
+        "files.trimTrailingWhitespace": true,
+        "files.trimFinalNewlines": true,
+        "editor.semanticHighlighting.enabled": true
+    },
+    "editor.cursorStyle": "block",
+    "extensions.ignoreRecommendations": true,
+    "workbench.remoteIndicator.showExtensionRecommendations": false,
+    "editor.lineNumbers": "relative",
+    "vim.useCtrlKeys": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "github.copilot.preferredAccount": "dimitridepardieu",
+    "workbench.sideBar.location": "right"
 }
