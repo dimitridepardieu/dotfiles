@@ -1,22 +1,21 @@
 " ~/.vimrc
 
-" Set a 80 chars limit
-set colorcolumn=80
-
-" Enable plugins and load plugin for the detected file type
+set number
+set relativenumber
+syntax on
+filetype on
 filetype plugin on
-
-" Load an indent file for the detected file type
 filetype indent on
 
-" Turn syntax highlighting on.
-syntax on
+" Plugins
+" https://github.com/junegunn/vim-plug
+call plug#begin()
 
-" Add numbers to each line on the left-hand side.
-set number
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
-" Highlight cursor line underneath the cursor horizontally.
-" set cursorline
+call plug#end()
 
-" Highlight cursor line underneath the cursor vertically.
-" set cursorcolumn
+" Catppuccin theme
+" https://github.com/catppuccin/vim
+set termguicolors
+colorscheme catppuccin_mocha
