@@ -132,3 +132,18 @@ export LANG=en_US.UTF-8
 # Set the default text editor for Bundler (Ruby dependency management tool)
 # export BUNDLER_EDITOR=code
 
+# Postgresql
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Install symfony-cli shell completions
+  if command -v symfony &>/dev/null; then
+    eval "$(symfony completion)"
+  fi
+
+# Add GNU Make (homebrew) to PATH (default CLI: `gmake`)
+# The default GNU Make version on macOS is too old
+# I want to use the last version available on homebrew
+# This export lets us use `make` as an alias for `gmake`
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
