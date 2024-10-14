@@ -132,9 +132,12 @@ export LANG=en_US.UTF-8
 # Set the default text editor for Bundler (Ruby dependency management tool)
 # export BUNDLER_EDITOR=code
 
-# Postgresql
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+# If you need to have postgresql@17 first in your PATH:
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+
+# For compilers to find postgresql@17 you may need to set:
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@17/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@17/include"
 
 # Install symfony-cli shell completions
   if command -v symfony &>/dev/null; then
