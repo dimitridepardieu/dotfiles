@@ -150,3 +150,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/postgresql@17/include"
 # This export lets us use `make` as an alias for `gmake`
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
+alias ssh='/usr/bin/ssh'
+alias ssh-add='/usr/bin/ssh-add'
+alias ssh-agent='/usr/bin/ssh-agent'
+
