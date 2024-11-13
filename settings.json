@@ -5,8 +5,10 @@
   "editor.minimap.enabled": false,
   "editor.rulers": [
     {
-      "column": 80
-      // "color": "#232332" // For Catppuccin Mocha Theme
+      "column": 80,
+      // "color": "#f1f1f1" // For Catppuccin Latte Theme
+      // "color": "#232332" // For Catppuccin Mocha Default Theme
+      "color": "#212121" // For Catppuccin Mocha Theme
     }
   ],
   //   "update.showReleaseNotes": false,
@@ -42,12 +44,16 @@
   "files.insertFinalNewline": true,
   "workbench.colorCustomizations": {
     "[Catppuccin Mocha]": {
-      "editorIndentGuide.activeBackground1": "#2e2e42", // For Catppuccin Mocha Theme
-      "editorIndentGuide.background1": "#232332" // For Catppuccin Mocha Theme
+      // "editorIndentGuide.activeBackground1": "#2e2e42", // For Catppuccin Mocha Default Theme
+      // "editorIndentGuide.background1": "#232332", // For Catppuccin Mocha Default Theme
+      "editorIndentGuide.activeBackground1": "#212121", // For Catppuccin Mocha Default Theme
+      "editorIndentGuide.background1": "#212121" // For Catppuccin Mocha Default Theme
     },
     "[Catppuccin Latte]": {
-      "editorIndentGuide.activeBackground1": "#42392e29", // For Catppuccin Mocha Theme
-      "editorIndentGuide.background1": "#2323320a" // For Catppuccin Mocha Theme
+      // "editorIndentGuide.activeBackground1": "#42392e29", // For Catppuccin Mocha Theme
+      // "editorIndentGuide.background1": "#2323320a" // For Catppuccin Mocha Theme
+      "editorIndentGuide.activeBackground1": "#f1f1f1", // For Catppuccin Latte Theme
+      "editorIndentGuide.background1": "#f1f1f1" // For Catppuccin Latte Theme
     }
   },
   //   "[ruby]": {
@@ -105,5 +111,22 @@
         "cmd": "docker exec -t wlz-hrz-php vendor/bin/php-cs-fixer fix $(echo ${relativeFile} | sed 's/horizon-back\\///')"
       }
     ]
+  },
+  "i18n-ally.displayLanguage": "fr",
+  "i18n-ally.localesPaths": ["locales"],
+  "i18n-ally.sourceLanguage": "fr",
+  "i18n-ally.keystyle": "nested",
+  // "catppuccin.accentColor": "red"
+  "catppuccin.colorOverrides": {
+    "mocha": {
+      "base": "#1d1d1d",
+      "mantle": "#1d1d1d",
+      "crust": "#1d1d1d"
+    },
+    "latte": {
+      "base": "#fafafa",
+      "mantle": "#fafafa",
+      "crust": "#fafafa"
+    }
   }
 }
