@@ -85,7 +85,6 @@
   //   "editor.autoClosingOvertype": "never",
   //   "editor.autoClosingQuotes": "never",
   "editor.stickyScroll.enabled": false,
-  "workbench.iconTheme": "catppuccin-mocha",
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
@@ -98,7 +97,6 @@
   "editor.autoClosingQuotes": "never",
   "editor.autoClosingBrackets": "never",
   "github.copilot.editor.enableAutoCompletions": false,
-  "workbench.colorTheme": "Catppuccin Mocha",
   "editor.lineNumbers": "relative",
   "emeraldwalk.runonsave": {
     "commands": [
@@ -128,5 +126,7 @@
       "mantle": "#fafafa",
       "crust": "#fafafa"
     }
-  }
+  },
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha"
 }
