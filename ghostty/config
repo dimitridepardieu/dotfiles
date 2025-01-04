@@ -1,0 +1,8 @@
+# $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+
+# background = #1d1d1d
+font-family = "JetBrains Mono"
+font-size = 14
+font-thicken
+theme = tokyonight
+
