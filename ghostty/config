@@ -1,8 +1,9 @@
 # $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
 
-# background = #1d1d1d
+theme = whiteboard
 font-family = "JetBrains Mono"
 font-size = 14
 font-thicken
-theme = tokyonight
-
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
