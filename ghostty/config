@@ -1,6 +1,6 @@
 # $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
 
-theme = whiteboard
+theme = tokyonight
 font-family = "JetBrains Mono"
 font-size = 14
 font-thicken
