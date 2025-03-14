@@ -154,3 +154,11 @@ alias ssh='/usr/bin/ssh'
 alias ssh-add='/usr/bin/ssh-add'
 alias ssh-agent='/usr/bin/ssh-agent'
 
+
+# pnpm
+export PNPM_HOME="/Users/dimitri/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
