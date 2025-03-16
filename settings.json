@@ -1,36 +1,18 @@
 // ~/Library/Application\ Support/Code/User/settings.json
 
 {
-  // "python.defaultInterpreterPath": "~/.pyenv/shims/python",
   "editor.minimap.enabled": false,
-  "editor.rulers": [
-    {
-      "column": 80,
-      // "color": "#f1f1f1" // For Catppuccin Latte Theme
-      // "color": "#232332" // For Catppuccin Mocha Default Theme
-      "color": "#212121" // For Catppuccin Mocha Theme
-    }
-  ],
-  //   "update.showReleaseNotes": false,
+  "editor.lineHeight": 1.3,
   "editor.formatOnPaste": true,
   "workbench.activityBar.location": "top",
   "editor.renderWhitespace": "trailing",
-  //   "workbench.editor.limit.enabled": true,
-  //   "workbench.editor.limit.perEditorGroup": true,
-  //   "workbench.editor.limit.value": 1,
-  //   "workbench.editor.showTabs": "single",
-  //   "github.copilot.enable": {
-  //     "*": false,
-  //     "plaintext": false,
-  //     "markdown": false,
-  //     "scminput": false
-  //   },
   "editor.tabSize": 2,
   "[python]": {
     "editor.tabSize": 4
   },
   "[php]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.fontLigatures": true
   },
   "[c]": {
     "editor.tabSize": 4
@@ -42,51 +24,11 @@
     "editor.tabSize": 4
   },
   "files.insertFinalNewline": true,
-  "workbench.colorCustomizations": {
-    "[Catppuccin Mocha]": {
-      // "editorIndentGuide.activeBackground1": "#2e2e42", // For Catppuccin Mocha Default Theme
-      // "editorIndentGuide.background1": "#232332", // For Catppuccin Mocha Default Theme
-      "editorIndentGuide.activeBackground1": "#212121", // For Catppuccin Mocha Default Theme
-      "editorIndentGuide.background1": "#212121" // For Catppuccin Mocha Default Theme
-    },
-    "[Catppuccin Latte]": {
-      // "editorIndentGuide.activeBackground1": "#42392e29", // For Catppuccin Mocha Theme
-      // "editorIndentGuide.background1": "#2323320a" // For Catppuccin Mocha Theme
-      "editorIndentGuide.activeBackground1": "#f1f1f1", // For Catppuccin Latte Theme
-      "editorIndentGuide.background1": "#f1f1f1" // For Catppuccin Latte Theme
-    }
-  },
-  //   "[ruby]": {
-  //     "editor.defaultFormatter": "Shopify.ruby-lsp",
-  //     "editor.formatOnSave": true,
-  //     "editor.formatOnType": true,
-  //     "editor.insertSpaces": true,
-  //     "files.trimTrailingWhitespace": true,
-  //     "files.trimFinalNewlines": true,
-  //     "editor.semanticHighlighting.enabled": true
-  //   },
   "extensions.ignoreRecommendations": true,
-  //   "workbench.remoteIndicator.showExtensionRecommendations": false,
-  //   "editor.lineNumbers": "relative",
-  //   "vim.useCtrlKeys": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  //   "files.exclude": {
-  //     "**/.DS_Store": false,
-  //     "**/.git": false,
-  //     "**/.hg": false,
-  //     "**/.ruby-lsp": false,
-  //     "**/.svn": false,
-  //     "**/CVS": false,
-  //     "**/Thumbs.db": false
-  //   },
-  //   "editor.autoClosingDelete": "never",
-  //   "editor.autoClosingComments": "never",
-  //   "editor.autoClosingOvertype": "never",
-  //   "editor.autoClosingQuotes": "never",
   "editor.stickyScroll.enabled": false,
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
   "debug.console.fontFamily": "JetBrainsMono Nerd Font Mono",
@@ -94,9 +36,6 @@
   "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font Mono",
   "scm.inputFontFamily": "JetBrainsMono Nerd Font Mono",
   "chat.editor.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "editor.autoClosingQuotes": "never",
-  "editor.autoClosingBrackets": "never",
-  "github.copilot.editor.enableAutoCompletions": false,
   "editor.lineNumbers": "relative",
   "emeraldwalk.runonsave": {
     "commands": [
@@ -114,12 +53,35 @@
   "i18n-ally.localesPaths": ["locales"],
   "i18n-ally.sourceLanguage": "fr",
   "i18n-ally.keystyle": "nested",
-  // "catppuccin.accentColor": "red"
   "catppuccin.colorOverrides": {
     "mocha": {
-      "base": "#1d1d1d",
-      "mantle": "#1d1d1d",
-      "crust": "#1d1d1d"
+      "rosewater": "#f5e0dc",
+      "flamingo": "#f2cdcd",
+      "pink": "#f5c2e7",
+      "mauve": "#cba6f7",
+      "red": "#f38ba8",
+      "maroon": "#eba0ac",
+      "peach": "#fab387",
+      "yellow": "#f9e2af",
+      "green": "#a6e3a1",
+      "teal": "#94e2d5",
+      "sky": "#89dceb",
+      "sapphire": "#74c7ec",
+      "blue": "#89b4fa",
+      "lavender": "#b4befe",
+      "text": "#cdd6f4",
+      "subtext1": "#7f849c",
+      "subtext0": "#7f849c",
+      "overlay2": "#7f849c",
+      "overlay1": "#7f849c",
+      "overlay0": "#7f849c",
+      "surface2": "#7f849c",
+      "surface1": "#7f849c",
+      "surface0": "#7f849c",
+
+      "base": "#1e1e2e",
+      "mantle": "#181825",
+      "crust": "#181825"
     },
     "latte": {
       "base": "#fafafa",
@@ -127,6 +89,51 @@
       "crust": "#fafafa"
     }
   },
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha"
+  "catppuccin.bracketMode": "monochromatic",
+  "catppuccin.accentColor": "lavender",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.inlayHints.fontSize": 12,
+  "editor.inlayHints.enabled": "off",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "typescript.inlayHints.enumMemberValues.enabled": false,
+  "typescript.inlayHints.parameterTypes.enabled": false,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.enabled": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 13,
+  "editor.codeLensFontSize": 12,
+  "chat.editor.fontSize": 13,
+  "editor.cursorBlinking": "solid",
+  "workbench.colorTheme": "Tokyo Night",
+  "vim.cursorStylePerMode.insert": "block",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.guides.indentation": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "breadcrumbs.icons": false,
+  "vim.leader": " ",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["C-h"],
+      "commands": ["workbench.action.navigateLeft"]
+    },
+    {
+      "before": ["C-l"],
+      "commands": ["workbench.action.navigateRight"]
+    },
+    {
+      "before": ["C-j"],
+      "commands": ["workbench.action.navigateDown"]
+    },
+    {
+      "before": ["C-k"],
+      "commands": ["workbench.action.navigateUp"]
+    },
+    {
+      "before": ["<leader>", " "],
+      "commands": ["workbench.action.showAllEditors"]
+    }
+  ],
+  "workbench.editor.showTabs": "none"
 }
