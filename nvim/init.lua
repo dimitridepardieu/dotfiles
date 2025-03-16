@@ -645,6 +645,11 @@ require('lazy').setup({
             },
           },
         },
+        phpactor = {
+          root_dir = require('lspconfig').util.root_pattern { 'composer.json' },
+          single_file_support = true,
+          settings = {},
+        },
       }
 
       -- Ensure the servers and tools above are installed
