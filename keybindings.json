@@ -3,16 +3,17 @@
 // Place your key bindings in this file to override the defaults
 
 [
-    {
-        "key": "shift+alt+cmd+i",
-        "command": "workbench.action.openChat.copilot"
-    },
-    {
-        "key": "shift+cmd+i",
-        "command": "workbench.panel.chat.view.copilot.focus"
-    },
-    {
-        "key": "shift+alt+cmd+k",
-        "command": "bookmarks.toggleLabeled"
-    }
+  // Copilot
+  {
+    "key": "shift+alt+cmd+i",
+    "command": "workbench.action.openChat.copilot"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "shift+alt+cmd+k",
+    "command": "bookmarks.toggleLabeled"
+  }
 ]
