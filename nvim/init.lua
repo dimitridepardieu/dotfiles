@@ -621,16 +621,6 @@ require('lazy').setup({
         -- ts_ls = {},
         --
         --
-        ts_ls = {
-          root_dir = require('lspconfig').util.root_pattern { 'package.json', 'tsconfig.json' },
-          single_file_support = false,
-          settings = {},
-        },
-        denols = {
-          root_dir = require('lspconfig').util.root_pattern { 'deno.json', 'deno.jsonc' },
-          single_file_support = false,
-          settings = {},
-        },
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
@@ -645,6 +635,19 @@ require('lazy').setup({
             },
           },
         },
+
+        ts_ls = {
+          root_dir = require('lspconfig').util.root_pattern { 'package.json', 'tsconfig.json' },
+          single_file_support = false,
+          settings = {},
+        },
+
+        denols = {
+          root_dir = require('lspconfig').util.root_pattern { 'deno.json', 'deno.jsonc' },
+          single_file_support = false,
+          settings = {},
+        },
+
         phpactor = {
           root_dir = require('lspconfig').util.root_pattern { 'composer.json' },
           single_file_support = true,
