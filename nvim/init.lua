@@ -653,6 +653,15 @@ require('lazy').setup({
           single_file_support = true,
           settings = {},
         },
+
+        eslint = {
+          root_dir = require('lspconfig').util.root_pattern {
+            'eslint.config.mjs',
+            '.eslintrc.json',
+          },
+          single_file_support = false,
+          settings = {},
+        },
       }
 
       -- Ensure the servers and tools above are installed
