@@ -644,11 +644,7 @@ require('lazy').setup({
           settings = {},
         },
 
-        phpactor = {
-          root_dir = require('lspconfig').util.root_pattern { 'composer.json' },
-          single_file_support = true,
-          settings = {},
-        },
+        phpactor = {},
 
         eslint = {
           root_dir = require('lspconfig').util.root_pattern {
