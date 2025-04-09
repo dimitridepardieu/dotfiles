@@ -26,7 +26,6 @@
   "files.insertFinalNewline": true,
   "extensions.ignoreRecommendations": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": false,
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontSize": 14,
@@ -132,6 +131,10 @@
     {
       "before": ["<leader>", " "],
       "commands": ["workbench.action.showAllEditors"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"]
     }
   ],
   "workbench.editor.showTabs": "none"
