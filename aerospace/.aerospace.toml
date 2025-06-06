@@ -125,19 +125,29 @@ automatically-unhide-macos-hidden-apps = false
 
     # Focus the specified workspace
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    ctrl-1 = 'workspace 1'
-    ctrl-2 = 'workspace 2'
-    ctrl-3 = 'workspace 3'
-    ctrl-4 = 'workspace 4'
-    ctrl-5 = 'workspace 5'
-    ctrl-6 = 'workspace 6'
-    ctrl-7 = 'workspace 7'
-    ctrl-8 = 'workspace 8'
-    ctrl-9 = 'workspace 9'
-    ctrl-0 = 'workspace 10'
+    cmd-sectionSign = 'workspace Home' # @ on azerty keyboard
+    cmd-1 = 'workspace 1'
+    cmd-2 = 'workspace 2'
+    cmd-3 = 'workspace 3'
+    cmd-4 = 'workspace 4'
+    cmd-5 = 'workspace 5'
+    cmd-6 = 'workspace 6'
+    cmd-7 = 'workspace 7'
+    cmd-8 = 'workspace 8'
+    cmd-9 = 'workspace 9'
+    cmd-alt-b = 'workspace Backend'
+    cmd-alt-c = 'workspace Chrome'
+    cmd-alt-d = 'workspace Docker'
+    cmd-alt-f = 'workspace Frontend'
+    cmd-alt-g = 'workspace Ghostty'
+    cmd-alt-p = 'workspace Postman'
+    cmd-alt-s = 'workspace Safari'
+    cmd-alt-v = 'workspace VSCode'
+    cmd-alt-w = 'workspace Zed' # z on azerty keyboard
 
     # Move the focused window to the specified workspace
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+    cmd-alt-shift-sectionSign = 'move-node-to-workspace Home'
     cmd-alt-shift-1 = 'move-node-to-workspace 1'
     cmd-alt-shift-2 = 'move-node-to-workspace 2'
     cmd-alt-shift-3 = 'move-node-to-workspace 3'
@@ -147,7 +157,15 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-shift-7 = 'move-node-to-workspace 7'
     cmd-alt-shift-8 = 'move-node-to-workspace 8'
     cmd-alt-shift-9 = 'move-node-to-workspace 9'
-    cmd-alt-shift-0 = 'move-node-to-workspace 10'
+    cmd-alt-shift-b = 'move-node-to-workspace Backend'
+    cmd-alt-shift-c = 'move-node-to-workspace Chrome'
+    cmd-alt-shift-d = 'move-node-to-workspace Docker'
+    cmd-alt-shift-f = 'move-node-to-workspace Frontend'
+    cmd-alt-shift-g = 'move-node-to-workspace Ghostty'
+    cmd-alt-shift-p = 'move-node-to-workspace Postman'
+    cmd-alt-shift-s = 'move-node-to-workspace Safari'
+    cmd-alt-shift-v = 'move-node-to-workspace VSCode'
+    cmd-alt-shift-w = 'move-node-to-workspace Zed'
 
     # Switch between the focused workspace and previously focused workspace
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
