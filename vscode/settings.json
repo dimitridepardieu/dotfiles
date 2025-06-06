@@ -35,16 +35,14 @@
   "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font Mono",
   "scm.inputFontFamily": "JetBrainsMono Nerd Font Mono",
   "chat.editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontLigatures": true,
   "editor.lineNumbers": "relative",
   "emeraldwalk.runonsave": {
     "commands": [
       {
-        "match": ".*",
-        "isAsync": true
-      },
-      {
         "match": "\\.php$",
-        "cmd": "docker exec -t wlz-hrz-php vendor/bin/php-cs-fixer fix $(echo ${relativeFile} | sed 's/horizon-back\\///')"
+        "cmd": "docker exec -t wlz-hrz-php vendor/bin/php-cs-fixer fix $(echo ${relativeFile} | sed 's/horizon-back\\///')",
+        "isAsync": true
       }
     ]
   },
@@ -76,10 +74,14 @@
       "overlay0": "#7f849c",
       "surface2": "#7f849c",
       "surface1": "#7f849c",
-      "surface0": "#1e1e2e",
-      "base": "#1e1e2e",
-      "mantle": "#181825",
-      "crust": "#181825"
+      // "surface0": "#1e1e2e",
+      // "base": "#1e1e2e",
+      // "mantle": "#181825",
+      // "crust": "#181825"
+      "surface0": "#1a1b26",
+      "base": "#1a1b26",
+      "mantle": "#1a1b26",
+      "crust": "#1a1b26"
     },
     "latte": {
       "base": "#fafafa",
@@ -102,9 +104,7 @@
   "terminal.integrated.fontSize": 13,
   "editor.codeLensFontSize": 12,
   "chat.editor.fontSize": 13,
-  "editor.cursorBlinking": "solid",
-  "workbench.colorTheme": "Tokyo Night",
-  "vim.cursorStylePerMode.insert": "block",
+  // "vim.cursorStylePerMode.insert": "block",
   "workbench.iconTheme": "catppuccin-mocha",
   "editor.guides.highlightActiveIndentation": false,
   "editor.guides.indentation": false,
@@ -137,5 +137,18 @@
       "commands": ["editor.action.formatDocument"]
     }
   ],
-  "workbench.editor.showTabs": "none"
+  "workbench.colorCustomizations": {
+    "[Tokyo Night]": {
+      "editorLineNumber.activeForeground": "#f1a26f"
+      // "sideBar.background": "#1a1b25"
+      // "sideBar.border": "#1a1b25",
+    }
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:claude-3.7-sonnet",
+  "editor.formatOnSave": true,
+  "catppuccin.italicKeywords": false,
+  "catppuccin.italicComments": false,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "gitlens.currentLine.enabled": false
 }
