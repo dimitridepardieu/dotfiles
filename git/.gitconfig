@@ -3,6 +3,7 @@
 [alias]
 	lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
 	last = cat-file commit HEAD
+	lol = log --oneline --graph --decorate --all
 
 [push]
 	default = simple
