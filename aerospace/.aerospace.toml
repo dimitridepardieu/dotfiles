@@ -61,12 +61,12 @@ automatically-unhide-macos-hidden-apps = false
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 4
-    inner.vertical =   4
-    outer.left =       4
-    outer.bottom =     4
-    outer.top =        4
-    outer.right =      4
+    inner.horizontal = 2
+    inner.vertical =   2
+    outer.left =       0
+    outer.bottom =     0
+    outer.top =        0
+    outer.right =      0
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -101,8 +101,8 @@ automatically-unhide-macos-hidden-apps = false
     # '''
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    cmd-alt-slash = 'layout tiles horizontal vertical'
-    cmd-alt-comma = 'layout accordion horizontal vertical'
+    cmd-alt-slash = 'layout tiles horizontal vertical' # = on azerty keyboard
+    cmd-alt-comma = 'layout accordion horizontal vertical' # ; on azerty keyboard
 
     # Set focus to the nearest window in the given direction
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
@@ -113,10 +113,10 @@ automatically-unhide-macos-hidden-apps = false
 
     # Move the focused window in the given direction
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    cmd-alt-shift-h = 'move left'
-    cmd-alt-shift-j = 'move down'
-    cmd-alt-shift-k = 'move up'
-    cmd-alt-shift-l = 'move right'
+    cmd-shift-h = 'move left'
+    cmd-shift-j = 'move down'
+    cmd-shift-k = 'move up'
+    cmd-shift-l = 'move right'
 
     # Resize the focused window
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
@@ -135,37 +135,19 @@ automatically-unhide-macos-hidden-apps = false
     cmd-7 = 'workspace 7'
     cmd-8 = 'workspace 8'
     cmd-9 = 'workspace 9'
-    cmd-alt-b = 'workspace Backend'
-    cmd-alt-c = 'workspace Chrome'
-    cmd-alt-d = 'workspace Docker'
-    cmd-alt-f = 'workspace Frontend'
-    cmd-alt-g = 'workspace Ghostty'
-    cmd-alt-p = 'workspace Postman'
-    cmd-alt-s = 'workspace Safari'
-    cmd-alt-v = 'workspace VSCode'
-    cmd-alt-w = 'workspace Zed' # z on azerty keyboard
 
     # Move the focused window to the specified workspace
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    cmd-alt-shift-sectionSign = 'move-node-to-workspace Home'
-    cmd-alt-shift-1 = 'move-node-to-workspace 1'
-    cmd-alt-shift-2 = 'move-node-to-workspace 2'
-    cmd-alt-shift-3 = 'move-node-to-workspace 3'
-    cmd-alt-shift-4 = 'move-node-to-workspace 4'
-    cmd-alt-shift-5 = 'move-node-to-workspace 5'
-    cmd-alt-shift-6 = 'move-node-to-workspace 6'
-    cmd-alt-shift-7 = 'move-node-to-workspace 7'
-    cmd-alt-shift-8 = 'move-node-to-workspace 8'
-    cmd-alt-shift-9 = 'move-node-to-workspace 9'
-    cmd-alt-shift-b = 'move-node-to-workspace Backend'
-    cmd-alt-shift-c = 'move-node-to-workspace Chrome'
-    cmd-alt-shift-d = 'move-node-to-workspace Docker'
-    cmd-alt-shift-f = 'move-node-to-workspace Frontend'
-    cmd-alt-shift-g = 'move-node-to-workspace Ghostty'
-    cmd-alt-shift-p = 'move-node-to-workspace Postman'
-    cmd-alt-shift-s = 'move-node-to-workspace Safari'
-    cmd-alt-shift-v = 'move-node-to-workspace VSCode'
-    cmd-alt-shift-w = 'move-node-to-workspace Zed'
+    cmd-shift-sectionSign = 'move-node-to-workspace Home'
+    cmd-shift-1 = 'move-node-to-workspace 1'
+    cmd-shift-2 = 'move-node-to-workspace 2'
+    cmd-shift-3 = 'move-node-to-workspace 3'
+    cmd-shift-4 = 'move-node-to-workspace 4'
+    cmd-shift-5 = 'move-node-to-workspace 5'
+    cmd-shift-6 = 'move-node-to-workspace 6'
+    cmd-shift-7 = 'move-node-to-workspace 7'
+    cmd-shift-8 = 'move-node-to-workspace 8'
+    cmd-shift-9 = 'move-node-to-workspace 9'
 
     # Switch between the focused workspace and previously focused workspace
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
