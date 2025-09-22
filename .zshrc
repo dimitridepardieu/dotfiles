@@ -74,15 +74,10 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  history-substring-search
 )
 
 # Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
-
-# Load rbenv if installed to manage Ruby versions
-export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
-type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # User configuration
 
@@ -139,11 +134,6 @@ export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/postgresql@17/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/postgresql@17/include"
 
-# Install symfony-cli shell completions
-  if command -v symfony &>/dev/null; then
-    eval "$(symfony completion)"
-  fi
-
 # Add GNU Make (homebrew) to PATH (default CLI: `gmake`)
 # The default GNU Make version on macOS is too old
 # I want to use the last version available on homebrew
@@ -166,5 +156,3 @@ esac
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/dimitri/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dimitri/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/dimitri/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dimitri/google-cloud-sdk/completion.zsh.inc'; fi
