@@ -1,13 +1,24 @@
-# ~/.zshrc
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '~/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
@@ -72,11 +83,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-)
+plugins=(git)
 
-# Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -84,75 +92,26 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG=en_US.UTF-8
-# export LC_ALL=en_US.UTF-8
+# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Or store your own aliases in the ~/.aliases file and load them here.
-# [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
-
-# (macOS-only) Prevent Homebrew from reporting
-# https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
-# export HOMEBREW_NO_ANALYTICS=1
-
-# Unalias some commands from oh-my-zsh plugins like common-aliases
-# Unalias those commands to disable interactive mode
-# unalias rm
-# unalias cp
-# unalias mv
-# Unalias this command if needed for https://github.com/localtunnel/localtunnel
-# unalias lt
-
-# Set the default text editor
-# export EDITOR=code
-
-# Set the default text editor for Bundler (Ruby dependency management tool)
-# export BUNDLER_EDITOR=code
-
-# If you need to have postgresql@17 first in your PATH:
-export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
-
-# For compilers to find postgresql@17 you may need to set:
-export LDFLAGS="-L/opt/homebrew/opt/postgresql@17/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/postgresql@17/include"
-
-# Add GNU Make (homebrew) to PATH (default CLI: `gmake`)
-# The default GNU Make version on macOS is too old
-# I want to use the last version available on homebrew
-# This export lets us use `make` as an alias for `gmake`
-export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
-
-alias ssh='/usr/bin/ssh'
-alias ssh-add='/usr/bin/ssh-add'
-alias ssh-agent='/usr/bin/ssh-agent'
-
-
-# pnpm
-export PNPM_HOME="/Users/dimitri/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/dimitri/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dimitri/google-cloud-sdk/path.zsh.inc'; fi
-

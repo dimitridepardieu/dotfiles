@@ -1,20 +1,20 @@
 # ~/.oh-my-zsh/custom/aliases.zsh
 
-# Shortcuts
-alias dev="cd ~/Developer"
+# Filesystem
+alias dotfiles="cd ~/Developer/dimitridepardieu/dotfiles"
+alias tmp="cd ~/Developer/tmp"
 alias dl="cd ~/Downloads"
-alias py="python3"
 
-# Get external IP in JSON format
+# Network
 alias myip="curl https://ipinfo.io/json; echo" # /ip for oneline plain text
-
-# Run a network speedtest
 alias speedtest="networkQuality"
 
 # Docker
 alias dpsid="docker ps --format 'table {{.ID}}\t{{.Names}}'"
 alias dpsp="docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Ports}}'"
 
-# Laravel
-alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+########################
+### WORK
+########################
 
+alias izzi="cd ~/toolib/izzi"
