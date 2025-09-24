@@ -16,6 +16,12 @@
 #
 # Additionally, each config option is also explained in detail
 # on Ghostty's website, at https://ghostty.org/docs/config.
+#
+# Ghostty can reload the configuration while running by using the menu
+# options or the bound key (default: Command + Shift + comma on macOS and
+# Control + Shift + comma on other platforms). Not all config options can be
+# reloaded while running; some only apply to new windows and others may require
+# a full restart to take effect.
 
 # Config syntax crash course
 # ==========================
@@ -45,8 +51,8 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = tokyonight
-font-family = "JetBrains Mono"
-font-size = 14
+font-family = "JetBrainsMono Nerd Font"
+# font-size = 14
 font-thicken
 cursor-style = block
 cursor-style-blink = false
