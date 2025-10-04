@@ -22,6 +22,6 @@
   },
   {
     "key": "alt+cmd+b",
-    "command": "-workbench.action.toggleAuxiliaryBar"
+    "command": "workbench.action.toggleAuxiliaryBar"
   }
 ]
