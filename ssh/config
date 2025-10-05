@@ -5,23 +5,13 @@ Host github.com
   UseKeychain yes
   IdentityFile ~/.ssh/id_ed25519
 
-# Lenovo ThinkPad T470s (at work)
-Host w470
-  HostName 192.168.22.56
+Host 470
+  HostName t470s.local
   User dimitri
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_ed25519
-
-# Lenovo ThinkPad T470s (from home)
-Host h470
-  HostName 192.168.1.36
-  User dimitri
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519
-
-# Toolib's staging server
-Host toolib-staging
-  HostName 51.159.37.153
-  User ddepardieu
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519
+  LocalForward 5001 localhost:5001
+  LocalForward 8114 localhost:8114
+  LocalForward 8116 localhost:8116
+  LocalForward 8500 localhost:8500
+  LocalForward 8502 localhost:8502
