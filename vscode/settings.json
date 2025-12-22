@@ -4,50 +4,25 @@
   "workbench.colorTheme": "Aura Dark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.location": "top",
+
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.renderWhitespace": "trailing",
+  "editor.lineNumbers": "relative",
 
-  // "workbench.colorCustomizations": {
-  //   "editorError.foreground": "#00000000",
-  //   "editorWarning.foreground": "#00000000",
-  //   "editorInfo.foreground": "#00000000",
-  // },
-
-  "catppuccin.italicKeywords": false,
-  "catppuccin.colorOverrides": {
-    "mocha": {
-      "rosewater": "#f5e0dc",
-      "flamingo": "#f2cdcd",
-      "pink": "#f5c2e7",
-      "mauve": "#cba6f7",
-      "red": "#f38ba8",
-      "maroon": "#eba0ac",
-      "peach": "#fab387",
-      "yellow": "#f9e2af",
-      "green": "#a6e3a1",
-      "teal": "#94e2d5",
-      "sky": "#89dceb",
-      "sapphire": "#74c7ec",
-      "blue": "#89b4fa",
-      "lavender": "#b4befe",
-      "text": "#cdd6f4",
-      "subtext1": "#bac2de",
-      "subtext0": "#a6adc8",
-      "overlay2": "#9399b2",
-      "overlay1": "#7f849c",
-      "overlay0": "#6c7086",
-      "surface2": "#585b70",
-      "surface1": "#45475a",
-      "surface0": "#313244",
-      "base": "#1e1e2e",
-      "mantle": "#181825",
-      "crust": "#11111b"
-    }
-  },
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "editor.lineNumbers": "relative"
+
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  "pgsql.serverGroups": [
+    {
+      "name": "Servers",
+      "id": "F706818C-21EC-45A1-B4E4-F820A9A9319E",
+      "isDefault": true
+    }
+  ],
+  "dart.flutterSdkPath": "/Users/dimitri/flutter"
 }
