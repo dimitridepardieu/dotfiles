@@ -38,3 +38,6 @@ export PATH="$HOME/.local/bin:$PATH"
 alias ls="ls -G"
 
 alias dotfiles="cd ~/Developer/dimitridepardieu/dotfiles"
+alias izzi="cd ~/work/izzi"
+alias julia="cd ~/work/julia"
+alias wheeliz="cd ~/work/wheeliz"
