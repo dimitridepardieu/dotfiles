@@ -35,4 +35,6 @@ export PATH="$HOME/.local/bin:$PATH"
 ###### ALIASES #####
 ####################
 
+alias ls="ls -G"
+
 alias dotfiles="cd ~/Developer/dimitridepardieu/dotfiles"
