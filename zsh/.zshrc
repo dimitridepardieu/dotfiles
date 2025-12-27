@@ -6,6 +6,9 @@ eval "$(starship init zsh)"
 #### COMPLETION ####
 ####################
 
+# Extra completion paths
+FPATH="$HOME/.docker/completions:$FPATH"
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
 
@@ -30,6 +33,7 @@ fi
 ####################
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.docker/bin:$PATH"
 
 ####################
 ###### ALIASES #####
