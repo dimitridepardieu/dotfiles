@@ -35,6 +35,25 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.docker/bin:$PATH"
 
+# GNU coreutils
+# This replaces default macOS core utils by Linux core utils
+
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/findutils/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
+export MANPATH="/opt/homebrew/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANPATH="/opt/homebrew/opt/findutils/libexec/gnuman:$MANPATH"
+export MANPATH="/opt/homebrew/opt/gnu-tar/libexec/gnuman:$MANPATH"
+export MANPATH="/opt/homebrew/opt/gnu-sed/libexec/gnuman:$MANPATH"
+export MANPATH="/opt/homebrew/opt/grep/libexec/gnuman:$MANPATH"
+export MANPATH="/opt/homebrew/opt/gawk/libexec/gnuman:$MANPATH"
+export MANPATH="/opt/homebrew/opt/make/libexec/gnuman:$MANPATH"
+
 ####################
 ###### ALIASES #####
 ####################
