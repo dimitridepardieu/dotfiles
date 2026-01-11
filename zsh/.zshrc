@@ -58,7 +58,7 @@ export MANPATH="/opt/homebrew/opt/make/libexec/gnuman:$MANPATH"
 ###### ALIASES #####
 ####################
 
-alias ls="ls -G"
+alias ls="ls --color"
 
 alias dotfiles="cd ~/Developer/dimitridepardieu/dotfiles"
 alias izzi="cd ~/work/izzi"
