@@ -6,6 +6,7 @@ set relativenumber
 set scrolloff=10
 
 " --- Highlight ---
+syntax off
 set cursorline
 highlight LineNr ctermfg=white
 highlight CursorLine cterm=NONE
