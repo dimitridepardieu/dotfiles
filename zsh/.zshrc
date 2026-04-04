@@ -35,6 +35,7 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.docker/bin:$PATH"
 
+
 # GNU coreutils
 # This replaces default macOS core utils by Linux core utils
 
@@ -54,13 +55,19 @@ export MANPATH="/opt/homebrew/opt/grep/libexec/gnuman:$MANPATH"
 export MANPATH="/opt/homebrew/opt/gawk/libexec/gnuman:$MANPATH"
 export MANPATH="/opt/homebrew/opt/make/libexec/gnuman:$MANPATH"
 
+# Android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 ####################
 ###### ALIASES #####
 ####################
 
-alias ls="ls --color"
+# alias ls="ls --color"
+alias ll="ls -l"
 
-alias dotfiles="cd ~/Developer/dimitridepardieu/dotfiles"
-alias izzi="cd ~/work/izzi"
-alias julia="cd ~/work/julia"
-alias wheeliz="cd ~/work/wheeliz"
+# Git
+alias gst="git status"
+
+# Docker
+alias dps="docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
