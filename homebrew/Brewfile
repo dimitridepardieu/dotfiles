@@ -1,4 +1,5 @@
 tap "nikitabobko/tap"
+tap "leoafarias/fvm"
 
 # Core Utils
 brew "coreutils"
@@ -32,6 +33,10 @@ brew "zellij"
 brew "lazydocker"
 brew "lazygit"
 brew "scc"
+brew "fvm"
+
+# IA
+brew "ollama"
 
 # Casks
 cask "aerospace"
