@@ -15,3 +15,6 @@
 	lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
 	lol = log --oneline --graph --decorate --all
 	last = cat-file commit HEAD
+
+[core]
+	autocrlf = input
