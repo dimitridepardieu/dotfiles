@@ -177,30 +177,30 @@ automatically-unhide-macos-hidden-apps = true
     check-further-callbacks = true
     run = 'layout floating'
 
-[[on-window-detected]]
-    if.app-id = 'com.apple.Safari'
-    run = 'layout tiling'
-
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.VSCode'
-    run = 'layout tiling'
-
-[[on-window-detected]]
-    if.app-id = 'com.mitchellh.ghostty'
-    run = 'layout tiling'
-
-[[on-window-detected]]
-    if.app-id = 'com.google.Chrome'
-    run = 'layout tiling'
-
-[[on-window-detected]]
-    if.app-id = 'com.apple.dt.Xcode'
-    run = 'layout tiling'
-
-[[on-window-detected]]
-    if.app-id = 'org.mozilla.firefox'
-    run = 'layout tiling'
-
-[[on-window-detected]]
-    if.app-id = 'com.figma.Desktop'
-    run = 'layout tiling'
+# [[on-window-detected]]
+#     if.app-id = 'com.apple.Safari'
+#     run = 'layout tiling'
+#
+# [[on-window-detected]]
+#     if.app-id = 'com.microsoft.VSCode'
+#     run = 'layout tiling'
+#
+# [[on-window-detected]]
+#     if.app-id = 'com.mitchellh.ghostty'
+#     run = 'layout tiling'
+#
+# [[on-window-detected]]
+#     if.app-id = 'com.google.Chrome'
+#     run = 'layout tiling'
+#
+# [[on-window-detected]]
+#     if.app-id = 'com.apple.dt.Xcode'
+#     run = 'layout tiling'
+#
+# [[on-window-detected]]
+#     if.app-id = 'org.mozilla.firefox'
+#     run = 'layout tiling'
+#
+# [[on-window-detected]]
+#     if.app-id = 'com.figma.Desktop'
+#     run = 'layout tiling'
